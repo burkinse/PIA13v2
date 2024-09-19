@@ -1,55 +1,56 @@
 import { Image, StyleSheet, Platform, View, Text, Button } from 'react-native';
-
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useState } from 'react';
 
+
+
 export default function HomeScreen() {
   
-  const [fruit, setFruit] = useState("kiwi");
-
-  const [counter, setCounter] = useState(0);
-
-  
+ 
   
   
   return (
-    <View style={{ flex: 1, backgroundColor: "blue",}}>
+    <View style={{ flex: 2, backgroundColor: "white",}}>
 
 
-      <View style={{ height: 150, backgroundColor: "white", flexDirection: "row"}}>
-        <View style={{backgroundColor: "red" , flex : 1, justifyContent: "center", alignItems: "center" }}>
-          <Text>A</Text>
-          </View>
-        <View style={{backgroundColor: "green" , flex : 1, justifyContent: "center", alignItems: "center"}}>
-          <Text>B</Text>    
-          </View>    
-        <View style={{backgroundColor: "red" , flex : 1,justifyContent: "center", alignItems: "center" }}>
-          <Text>C</Text>
-          </View>
-      
-      </View>
-      
-      <View style= {{ backgroundColor: "yellow", height: 50, justifyContent: "center", alignItems: "center" }}>
-        <Text>banan</Text>
+      <View style={{ height: 120, backgroundColor: "white", }}>
+        <View style={{backgroundColor: "red" , height : 120 , justifyContent: "center", alignItems: "center", }}>
+          <Text style={{ fontSize : 25 }}  >RÖD</Text>
         </View>
-
-      <View style= {{ flex : 1 }}>
-        <Text style={{ fontSize : 25, color: "red" }}  >( counter )</Text>
+        
       </View>
 
-      <View style= {{ backgroundColor: "red" , height : 60}}>
+      <View style={{ height: 135, backgroundColor: "white", flexDirection: "row"}}>
+        <View style={{backgroundColor: "green" , flex : 1, justifyContent: "down", alignItems: "right", }}>
+          <Text style={{ fontSize : 35 }}  >GRÖN</Text>
+        </View>
+        <View style={{backgroundColor: "yellow" , flex : 1, }}>   
+        </View>   
+      </View>
 
-          <Button title="Press on me" onPress={() => {
-            console.log("You pressed on the button"); 
-            setFruit("Apelsin");
-            setCounter(counter + 1);
-            }}/>
-          
+
+
+
+      <View style={{ height: 80, backgroundColor: "white", flexDirection: "row"}}>
+         <View style= {{ backgroundColor: "red", flex : 7, height: 80}}>
           </View>
-    </View>
+        <View style={{backgroundColor: "black" , flex : 3, }}>   
+          </View>  
+          </View>
+
+      
+
+      <View style= {{ height: 380, backgroundColor: "skyblue" }}>
+      </View>
+
+      <View style= {{ backgroundColor: "darkorange" , height : 60, justifyContent: "center", alignItems: "flex-end"}}>
+        <Text style={{ fontSize : 30,  }} >ORANGE</Text>
+          </View>
+        
+     </View>
 
 
   );
