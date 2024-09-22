@@ -24,7 +24,7 @@ export default function HomeScreen() {
       </View>
 
       <View style={{ height: 135, backgroundColor: "white", flexDirection: "row"}}>
-        <View style={{backgroundColor: "green" , flex : 1, justifyContent: "down", alignItems: "right", }}>
+        <View style={{backgroundColor: "green" , flex : 1, justifyContent: "up", alignItems: "flex-start", }}>
           <Text style={{ fontSize : 35 }}  >GRÖN</Text>
         </View>
         <View style={{backgroundColor: "yellow" , flex : 1, }}>   
